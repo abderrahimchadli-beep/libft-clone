@@ -38,6 +38,7 @@ cc -Wall -Wextra -Werror -Ilibft example.c libft.a -o example
 
 | Function | Purpose |
 | --- | --- |
+| `ft_strchr` | Find the first character, including the string terminator |
 | `ft_memchr` | Find the first matching byte within a bounded range |
 | `ft_memcmp` | Compare byte ranges using unsigned-byte ordering |
 | `ft_bzero` | Set a byte range to zero |
