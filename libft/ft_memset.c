@@ -1,8 +1,8 @@
-#include<unistd.h>
+#include <stddef.h>
 
-void *ft_memset(void *ptr, int n, unsigned int num)
+void *ft_memset(void *ptr, int n, size_t num)
 {
-	unsigned int	i;
+	size_t	i;
 	unsigned char *str = (unsigned char *) ptr;
 	i = 0;
 	while ( i < num)

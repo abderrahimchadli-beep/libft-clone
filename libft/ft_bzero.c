@@ -1,9 +1,9 @@
-#include<unistd.h>
+#include <stddef.h>
 
-void	ft_bzero(void *ptr, unsigned int n)
+void	ft_bzero(void *ptr, size_t n)
 {
 	unsigned char *str= (unsigned char *) ptr;
-	unsigned int i = 0;
+	size_t i = 0;
 	while(i < n)
 	{
 		str[i]='\0';
