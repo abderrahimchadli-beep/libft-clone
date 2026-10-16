@@ -14,4 +14,6 @@ size_t  ft_strlen(const char *str);
 
 int ft_memcmp(const void *a, const void *b, size_t n);
 
+void *ft_memchr(const void *s, int c, size_t n);
+
 #endif
