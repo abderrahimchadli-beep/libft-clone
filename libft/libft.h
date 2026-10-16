@@ -12,4 +12,6 @@ void    *ft_memcpy(void *dest, const void *src, size_t n);
 void    *ft_memset(void *ptr, int value, size_t n);
 size_t  ft_strlen(const char *str);
 
+int ft_memcmp(const void *a, const void *b, size_t n);
+
 #endif
