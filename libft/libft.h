@@ -16,4 +16,6 @@ int ft_memcmp(const void *a, const void *b, size_t n);
 
 void *ft_memchr(const void *s, int c, size_t n);
 
+char *ft_strchr(const char *s, int c);
+
 #endif
