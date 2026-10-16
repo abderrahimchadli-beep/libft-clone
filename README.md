@@ -38,6 +38,7 @@ cc -Wall -Wextra -Werror -Ilibft example.c libft.a -o example
 
 | Function | Purpose |
 | --- | --- |
+| `ft_memcmp` | Compare byte ranges using unsigned-byte ordering |
 | `ft_bzero` | Set a byte range to zero |
 | `ft_memset` | Fill a byte range with the converted unsigned-byte value |
 | `ft_memcpy` | Copy a non-overlapping byte range; return the destination |
