@@ -1,0 +1,12 @@
+# Build outputs
+*.o
+*.a
+/tests/test_*
+!/tests/test_*.c
+/example
+
+# Local editor and operating system files
+*.swp
+*.swo
+*~
+.DS_Store
