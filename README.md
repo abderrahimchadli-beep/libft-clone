@@ -46,6 +46,7 @@ cc -Wall -Wextra -Werror -Ilibft example.c libft.a -o example
 | `ft_bzero` | Set a byte range to zero |
 | `ft_memset` | Fill a byte range with the converted unsigned-byte value |
 | `ft_memcpy` | Copy a non-overlapping byte range; return the destination |
+| `ft_memmove` | Copy a byte range safely even when source and destination overlap |
 | `ft_strlen` | Count bytes before the first NUL; return `size_t` |
 | `ft_isalpha` | Recognize ASCII letters |
 | `ft_isdigit` | Recognize ASCII decimal digits |
@@ -58,10 +59,15 @@ Memory functions require valid buffers for the requested length.
 `ft_memcpy` does not support overlapping ranges. `ft_strlen` requires a valid
 NUL-terminated string and counts bytes, not Unicode characters.
 
-This is a partial library: functions such as `ft_memmove`, allocation helpers,
-and linked-list utilities are not implemented.
+This is a partial library: allocation helpers and linked-list utilities are
+not implemented.
 
 ## Tests
 
 `make test` checks byte copying, fill and zero boundaries, zero-length operations,
 string lengths, and character predicates across all byte values in the C locale.
+The memory-move tests compare every valid source offset, destination offset,
+and length in a 32-byte buffer against the standard `memmove`, including overlap
+in both directions, identical ranges, and zero-length moves. Separate buffers
+are tested as well.
+
